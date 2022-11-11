@@ -135,7 +135,7 @@ cte_telemetry_state_durations as (
     rn = 1
 )
 -- and finally, use all of that to run normal queries on
--- such as show telemetry durations for particular states, between timespans, by vehicle number, or speed
+-- such as show telemetry durations for particular states, between timespans, by vehicle number, speed, and/or sustained state duration
 select
   *
 from
