@@ -4,8 +4,9 @@ This repo contains fake telemetry data and uses ANSI SQL kungfu to determine the
 
 ## Usage
 
-- load the telemetry.csv file into your favourite database-like tool [Databricks SQL was used during development].
-- execute the kungfu.sql script and adjust as necessary if ANSI SQL isn't compatible.
+- load the [telemetry.csv](telemetry.csv) file into your favourite database-like tool [Databricks SQL was used during development].
+- execute the [kungfu.sql](kungfu.sql) script and adjust as necessary if ANSI SQL isn't compatible.
+- example output is found in [query_output.csv](query_output.csv)
 
 ### Note
 

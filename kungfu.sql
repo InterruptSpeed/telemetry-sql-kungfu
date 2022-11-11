@@ -141,7 +141,8 @@ select
 from
   cte_telemetry_state_durations
 where
-  state in ("FAST", "TOOFAST");
+  state in ("FAST", "TOOFAST")
+order by state_start;
 
 -- ideas for future possibilities:
 -- use the state_group_id to plot on a map
