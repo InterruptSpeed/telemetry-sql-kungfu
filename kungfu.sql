@@ -2,7 +2,7 @@
 -- build a common table expression [cte] that returns it's records, 
 --   classifies each row's speed based on thresholds [configurable],
 --   and determines the last_timestamp for each row.
--- we put placeholders in for lat/lng fields that are present
+-- put placeholders in for lat/lng fields that are present
 --  in normal telemetry but were skipped for this example
 with cte_telemetry as (
   select
@@ -116,7 +116,7 @@ cte_telemetry_with_row_num as (
     vehicleid,
     timestamp
 ),
--- calculate the how many seconds the vehicle was in a state and only focus on the row before a state change
+-- calculate how many seconds the vehicle was in a state and only focus on the row before a state change
 cte_telemetry_state_durations as (
   select
     state_group_id,
@@ -148,6 +148,6 @@ order by state_start;
 -- use the state_group_id to plot on a map
 -- identify convergence of vehicles, sequence of reinforcements, time-to-scene, first-on-scene
 -- if telemetry was real-time, understand proxmity of deployed resources and posture of reserve resources
--- supplement data with other data sources such as vehicle / crew capability / speciality [K-9 for example], or commslogs, or instrument metrics [lights state, sirens state, etc]
+-- supplement data with other data sources such as vehicle / crew capability / speciality [e.g. K-9, etc.], or commslogs, or instrument metrics [lights state, sirens state, etc]
 -- adjust thresholds to be tuned to the specifics of road the vehicle is on based on lat/lng [e.g. residential vs. school zone vs. rural road, etc]
 -- consider traffic density as a function of time of day and impact of vehicle presence on traffic patterns?
