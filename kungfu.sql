@@ -122,7 +122,7 @@ cte_telemetry_state_durations as (
     state_group_id,
     state_timestamp_start as state_start,
     timestamp as state_end,
-    vehicleid,
+    vehicleid as vehicle_id,
     state,
     avg_speed_in_state,
     max_speed_in_state,

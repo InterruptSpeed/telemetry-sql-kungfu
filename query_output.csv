@@ -1,4 +1,4 @@
-﻿state_group_id,state_start,state_end,vehicleid,state,avg_speed_in_state,max_speed_in_state,state_duration_in_seconds,end_lat,end_lng
+﻿state_group_id,state_start,state_end,vehicle_id,state,avg_speed_in_state,max_speed_in_state,state_duration_in_seconds,end_lat,end_lng
 ADAM-12_1651756080_2,2022-05-05 13:05:00,2022-05-05 13:08:00,ADAM-12,FAST,111.25,115.0,180,,
 ADAM-12_1651795320_5,2022-05-06 00:02:00,2022-05-06 00:02:00,ADAM-12,FAST,115.0,115.0,0,,
 21-JMPSTRT_1656650820_2,2022-07-01 04:44:00,2022-07-01 04:47:00,21-JMPSTRT,FAST,130.0,145.0,180,,
