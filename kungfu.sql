@@ -89,13 +89,13 @@ cte_telemetry_with_row_num as (
       order by
         timestamp desc
     ) as rn,
-    avg(speed) over (
+    round(avg(speed) over (
       partition by vehicleid,
       state_change_id
       order by
         vehicleid,
         timestamp
-    ) as avg_speed_in_state,
+    ), 2) as avg_speed_in_state,
     max(speed) over (
       partition by vehicleid,
       state_change_id
